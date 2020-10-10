@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"><img src="/Assests/images/logo.png"> Portfolio site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/home"> <i class="fas fa-lg fa-laptop-house"></i> Home</a>
+        </li>
+
+        <% if (title == "About"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/about"> <i class="fas fa-lg fa-address-card"></i></i> About Me</a>
+        </li>
+
+        <% if (title == "Projects"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/projects"><i class="fas fa-lg fa-project-diagram"></i> Projects</a>
+        </li>
+
+        <% if (title == "Services"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i></i></i> Services</a>
+        </li>
+
+        <% if (title == "Contact"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone"></i> Contact</a>
+        </li>
+    </div>
+  </nav>

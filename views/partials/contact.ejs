@@ -1,0 +1,34 @@
+<h1 class="display-4"> Contact Us: </h1>  
+  <form>
+    <div class="row">
+      <div class="col">
+        <label>First Name: </label>
+        <input type="text" class="form-control" placeholder="First Name">
+      </div>
+      <div class="col">
+        <label>Last Name: </label>
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>
+    </div></br>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address: </label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname@example.com">
+      <small id="emailHelp" class="form-text text-muted">We will contact you on this mail.</small>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number: </label>
+      <input type="number" class="form-control" placeholder="647-888-0000">
+    </div>
+
+    <div class="mb-3">
+      <label for="validationTextarea">Message: </label>
+      <textarea class="form-control" id="validationTextarea" placeholder="Type your message here" required></textarea>
+      <div class="invalid-feedback">
+        Please enter a message in the textarea.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-dark" formaction="/home">Submit</button>
+    </form>
