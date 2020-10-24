@@ -1,6 +1,6 @@
 <!--File name: main_nav.ejs , Student’s Name: Ramandeep, StudentID: 301095150, and Date: 9-10-2020-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="/"><img src="/Assests/images/logo.png"> Portfolio site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
         <%} else { %>
         <li class="nav-item">
         <%} %>
-          <a class="nav-link" href="/about"> <i class="fas fa-lg fa-address-card"></i></i> About Me</a>
+          <a class="nav-link" href="/about"> <i class="fas fa-lg fa-address-card"></i> About Me</a>
         </li>
 
         <% if (title == "Projects"){ %>
@@ -39,7 +39,15 @@
         <%} else { %>
         <li class="nav-item">
         <%} %>
-          <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i></i></i> Services</a>
+          <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i> Services</a>
+        </li>
+
+        <% if (title == "BusinessContacts"){ %>
+          <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item">
+        <%} %>
+          <a class="nav-link" href="/businessContacts"><i class="far fa-lg fa-address-book"></i></i> BusinessContacts</a>
         </li>
 
         <% if (title == "Contact"){ %>
@@ -49,5 +57,20 @@
         <%} %>
           <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone"></i> Contact</a>
         </li>
+
+        <% if(typeof displayName == 'string' && displayName) { %>
+          <li class = "nav-item"><a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i>LogOut</a></li>
+           
+        <% } else { %>
+         <li class="nav-item">
+           <a href="/login" class="nav-link">
+             <i class="fas fa-lg fa-sign-in-alt"></i>
+             Login
+           </a>
+         </li>
+        <% } %>
+        
+
     </div>
   </nav>

@@ -6,7 +6,11 @@
 
 
   <main class="container">
-    <div class="jumbotron">
+    <% if(typeof displayName == 'string' && displayName) { %>
+    <li class = "navbar-text"><h6><i class="fas fa-lg fa-user"></i><b> Hi! <%= displayName %></b></h6></li>
+    <% } else { %>
+      <% } %>
+    <div class="jumbotron bg-warning">
 
       <% if (title == "Home"){ %>
         <%- include partials/homepage.ejs %>
@@ -26,7 +30,6 @@
       <% if (title == "Services"){ %>
         <%- include partials/services.ejs %>
       <%} %>
-
 
       <% if (title == "Contact"){ %>
         <%- include partials/contact.ejs %>
