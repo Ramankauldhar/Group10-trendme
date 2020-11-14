@@ -1,4 +1,3 @@
-//File name: contact.js , Student’s Name: Ramandeep, StudentID: 301095150, and Date: 10-18-2020
 
 let express = require('express');
 let router = express.Router();

@@ -41,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ramankauldhar/MAPD229_Assignment1_Ramandeep.git"
+    "url": "https://github.com/jaiminipatel1611/Group10"
   },
-  "author": "Ramandeep",
+  "author": "Group 10",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ramankauldhar/MAPD229_Assignment1_Ramandeep/issues"
+    "url": "https://github.com/jaiminipatel1611/Group10/issues"
   },
-  "homepage": "https://github.com/Ramankauldhar/MAPD229_Assignment1_Ramandeep#readme"
+  "homepage": "https://github.com/jaiminipatel1611/Group10#readme"
 }

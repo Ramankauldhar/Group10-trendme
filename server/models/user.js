@@ -1,4 +1,3 @@
-//File name: user.js , Student’s Name: Ramandeep, StudentID: 301095150, and Date: 10-22-2020
 
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
