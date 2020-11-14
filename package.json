@@ -41,9 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaiminipatel1611/Group10"
+    "url": "git+https://github.com/jaiminipatel1611/Group10"
   },
-  "author": "Group 10",
+  "author": "Ramandeep",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaiminipatel1611/Group10/issues"
